@@ -1,6 +1,15 @@
 
 .sidebar-container{
     background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+    padding: 20px !important;
+}
+.box-text p{
+margin: 0px 0px 0px 5px !important;
+font-size: 15px;
+}
+.box-text h1{
+font-size: 55px !important;
+padding-top: 5px;
 }
 @media only screen and (min-width: 992px) {
     .sidebar-container{

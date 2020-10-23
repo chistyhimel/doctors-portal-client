@@ -7,21 +7,21 @@ const AddDoctor = () => {
   const { register, handleSubmit, watch, errors } = useForm();
   const onSubmit = (data) => {
     const photo = data.file;
-      const formData = new FormData()
-      formData.append('file', photo[0])
-      formData.append('name', data.name)
-      formData.append('email', data.email)
-      fetch('http://localhost:5000/addADoctor', {
-        method: 'POST',
-        body: formData
+    const formData = new FormData();
+    formData.append("file", photo[0]);
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    fetch("https://obscure-journey-26618.herokuapp.com/addADoctor", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
       })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
-      })
-      .catch(error => {
-        console.error(error)
-      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
   return (
     <Container fluid>

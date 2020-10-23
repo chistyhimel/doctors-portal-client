@@ -5,7 +5,7 @@ import exceptionalServiceImg from "../../images/exceptional-service-img.png";
 const ExceptionalService = () => {
   return (
     <Container fluid>
-      <Row className="mt-5 pt-md-5">
+      <Row className="mt-5 pt-md-5 ">
         <Col md={5}>
           <img src={exceptionalServiceImg} className="img-fluid" alt="..." />
         </Col>

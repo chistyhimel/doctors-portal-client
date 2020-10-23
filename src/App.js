@@ -10,6 +10,7 @@ import Login from "./components/Login/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import PatientList from "./components/Dashboard/PatientList";
 import AddDoctor from "./components/Dashboard/AddDoctor";
+import AllAppointments from "./components/Dashboard/AllAppointments";
 
 export const UserContext = createContext();
 
@@ -32,18 +33,22 @@ function App() {
             <Login></Login>
           </Route>
 
-          <Route path="/dashboard">
+          <PrivateRoute path="/dashboard">
             <Dashboard></Dashboard>
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/patients">
+          <PrivateRoute path="/allAppointments">
+            <AllAppointments></AllAppointments>
+          </PrivateRoute>
+
+          <PrivateRoute path="/patients">
             <PatientList></PatientList>
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/addDoctor">
+          <PrivateRoute path="/addDoctor">
             <AddDoctor></AddDoctor>
-          </Route>
- 
+          </PrivateRoute>
+
           <Route exact path="/">
             <Home></Home>
           </Route>

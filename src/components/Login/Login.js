@@ -7,6 +7,7 @@ import loginImg from "../../images/login-img.png";
 import { useState } from "react";
 import { UserContext } from "../../App";
 import { useHistory, useLocation } from "react-router-dom";
+import GoogleButton from "react-google-button";
 
 firebase.initializeApp(firebaseConfig);
 
@@ -43,7 +44,9 @@ const Login = () => {
         var credential = error.credential;
       });
   };
-  console.log(loggedInUser);
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
 
   return (
     <Container>
@@ -51,7 +54,7 @@ const Login = () => {
         <Col md={6} className="align-self-center">
           <h3 className="text-center">{newUser ? "Signup" : "Login"}</h3>
 
-          <Form>
+          <Form onSubmit={handleSubmit}>
             {newUser && (
               <Form.Group>
                 <Form.Label>Name</Form.Label>
@@ -85,10 +88,11 @@ const Login = () => {
             </Form.Group>
 
             <button
-              type="submit"
+            onClick={handleGoogleSignIn}
               className=" btn-grad w-100 font-weight-bold mb-3"
             >
               Sign in
+               
             </button>
           </Form>
 
@@ -103,12 +107,7 @@ const Login = () => {
             </span>
           </p>
 
-          <button
-            className="btn btn-secondary btn-lg form-control"
-            onClick={handleGoogleSignIn}
-          >
-            Sign in With Google
-          </button>
+          <GoogleButton className="mx-auto" onClick={handleGoogleSignIn} />
         </Col>
         <Col md={6} className="d-none d-md-block">
           <img src={loginImg} alt="" className="img-fluid" />

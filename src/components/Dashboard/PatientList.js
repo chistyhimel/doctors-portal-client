@@ -5,12 +5,11 @@ import SideBar from "./SideBar";
 const PatientList = () => {
   const [patients, setPatients] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allAppointments")
+    fetch("https://obscure-journey-26618.herokuapp.com/allAppointments")
       .then((response) => response.json())
       .then((data) => {
-        const topTen = data.slice(0,10)
+        const topTen = data.slice(0, 10);
         setPatients(topTen);
-       
       });
   }, []);
   console.log(patients);

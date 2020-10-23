@@ -25,7 +25,7 @@ const BookingForm = ({ modalIsOpen, closeModal, date, appointmentOn }) => {
     data.service = appointmentOn;
     data.date = date;
     data.created = new Date();
-    fetch("http://localhost:5000/addAppointment", {
+    fetch("https://obscure-journey-26618.herokuapp.com/addAppointment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
