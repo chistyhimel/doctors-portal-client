@@ -1,0 +1,14 @@
+
+.sidebar-container{
+    background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+}
+@media only screen and (min-width: 992px) {
+    .sidebar-container{
+        height: 100vh;
+    }
+    .dashboard-container{
+        height: 100vh;
+        background-color: #19d3ae2a;
+    }
+  }
+  

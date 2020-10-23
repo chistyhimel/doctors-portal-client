@@ -1,0 +1,133 @@
+.header-container {
+  position: relative;
+  background-image: url("../../images/banner-bg-transparent.png");
+  background-size: cover;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-container::after {
+  height: 90vh;
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 33%;
+  right: 0;
+  background-color: #3a4256;
+  z-index: -50;
+}
+
+/* Primary Button  */
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #02aab0 0%,
+    #00cdac 51%,
+    #02aab0 100%
+  );
+}
+.btn-grad {
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  border: none;
+}
+
+/* Primary Background */
+.primary-bg {
+  background: #19d3ae;
+  background: linear-gradient(90deg, #19d3ae 0%, #0fcfec 100%);
+}
+/* Primary Color */
+.primary-color {
+  background: #19d3ae !important;
+}
+.secondary-color {
+  background-color: #3a4256 !important;
+}
+.primary-text-color {
+  color: #1cc7c1 !important;
+}
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Make Appointment */
+.make-appointment {
+  background-image: url("../../images/appointmentBg.png");
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 420px;
+  background-position: center center;
+}
+
+.make-appointment::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(36, 41, 73);
+  opacity: 0.8;
+  top: 0;
+}
+
+.make-appointment img {
+  height: 550px;
+  transform: translateY(-130px);
+}
+
+/* Testimonial Container */
+.testimonial-container {
+  background-image: url("../../images/quote.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 250px;
+}
+
+/* Blog Container */
+.latest-blog-box {
+  background: #19d3ae;
+  background: linear-gradient(90deg, #19d3ae2a 0%, #0fceec7e 100% ) ,url("../../images/quote.png");
+  content: "";
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
+
+/* contact */
+.contact-container {
+    background-image: linear-gradient(
+        95deg,
+        rgba(36, 41, 73, 0.911),
+        rgba(36, 41, 73, 0.925)
+      ),
+      url("../../images/appointmentBg.png");
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: top center;
+  }
+  
+  /* footer */
+  footer {
+    /* min-height: 62vh; */
+    background-image: url("../../images/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+@media only screen and (min-width: 992px) {
+  .make-appointment {
+    margin-top: 150px;
+  }
+}
