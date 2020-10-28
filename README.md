@@ -16,3 +16,8 @@ A full-stack responsive web app where patient can pick a date and fix an appoint
 ### Frontend: HTML, CSS, React JS, React Bootstrap, Firebase Authentication.
 
 ### Backend: Node JS, Express JS, MongoDB, Heroku.
+<br/>
+<br/>
+
+### [Resume]('https://drive.google.com/file/d/1d6OfaYXPL4u8YPYlBqk1Iay-Vf7Bh8jJ/view?usp=sharing') 
+### [Linkedin]("https://www.linkedin.com/in/chistyhimel/")
