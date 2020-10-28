@@ -1,6 +1,6 @@
 # Doctors Portal
 
-A full-stack app where you can pick the date and time and fix an appointment with your doctor. A doctor can review his appointments to a patient. <br/>
+A full-stack responsive web app where patient can pick a date and fix an appointment with a doctor. Doctor can review all his patients appointments. Patient can see his appointments date wise in dashboard. <br/>
 
 ## [Live Site](doctors-portall.web.app "Doctors Portal")
 
@@ -8,12 +8,11 @@ A full-stack app where you can pick the date and time and fix an appointment wit
 
 ## Features
 
-- A full-stack responsive web app where a user can pick the date and time and fix an appointment with
-  a doctor.
-- User have to login to see the dashboard and can see all his booked appointments date-wise.
-- In the admin panel admin can review all the booked appointments and add doctors.
+- Patient can pick the date to fix an appointment with a doctor.
+- Patient have to login to see the dashboard and can see all his booked appointments date-wise.
+- In the admin panel a admin can review all the booked appointments and add doctors.
   <br/>
 
-### Frontend: React JS, React Bootstrap, HTML, CSS, Firebase Authentication.
+### Frontend: HTML, CSS, React JS, React Bootstrap, Firebase Authentication.
 
 ### Backend: Node JS, Express JS, MongoDB, Heroku.
