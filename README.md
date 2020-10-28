@@ -14,6 +14,6 @@ A full-stack app where you can pick the date and time and fix an appointment wit
 - In the admin panel admin can review all the booked appointments and add doctors.
   <br/>
 
-### Frontend: HTML, CSS, React JS, React Bootstrap, Firebase Authentication.
+### Frontend: React JS, React Bootstrap, HTML, CSS, Firebase Authentication.
 
 ### Backend: Node JS, Express JS, MongoDB, Heroku.
